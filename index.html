@@ -1,84 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$FAKDAK 4 GUD LAK</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"> <!-- Add this line for favicon -->
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-image: url('./assets/fakdakbanner.png');
-            background-repeat: repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center; /* Center content horizontally */
-        }
-        main {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.942);
-            margin: 20px;
-            border-radius: 10px;
-        }
-        #intro {
-            margin-bottom: 20px;
-        }
-        #intro img {
-            max-width: 200px;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px; /* Center image horizontally and add space below */
-            border-radius: 50%; /* Rounded border for image */
-            transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
-        }
-        #intro img:hover {
-            transform: scale(1.069); /* Scale up image on hover */
-        }
-        #intro p {
-            display: none; /* Hide text initially */
-            font-size: 14px;
-            color: #666;
-        }
-        #intro:hover p {
-            display: block; /* Show text on hover */
-        }
-        #links {
-            text-align: center; /* Center content horizontally */
-        }
-        #links a {
-            display: inline-block;
-            margin: 0 6px; /* Adjust margin as needed */
-            text-decoration: none;
-        }
-        #links a img {
-            max-width: 24px; /* Adjust as needed */
-            height: auto;
-            vertical-align: middle; /* Align images vertically */
-        }
-        #links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FakDak</title>
+  <link rel="stylesheet" href="./styles/homepage.css" />
 </head>
 <body>
+  <header>
+    <img src="./images/fakdak.jpeg" alt="FAKDAK" />
+    <a href="memes.html"><button>   <img src="./images/fakdak.jpeg" alt="Intro Image" /> Explore Memes</button></a>
+  </header>  
+  <div id="content"></div>
+ 
+  <div class="section-one">
     <main>
         <section id="intro">
-            <img src="./assets/fakdak.jpeg" alt="Intro Image">
-            <p>$FAKDAK POLICY ID</p>
+            <img src="./images/fakdak.jpeg" alt="Intro Image" />
+            <p class="centerwe">POLICY ID    <img id="copyImage" src="./images/copy-icon.png" alt="Click to Copy" />
+            </p>
             <p>7fd79892567b12b8a4fe3befc41786322d40a9680a0509b158e8e1b9</p>
         </section>
         <section id="links">
-            <a href="https://x.com/FakDakADA" target="_blank"><img src="./assets/x.svg" alt="Twitter"></a>
-            <a href="https://www.taptools.io/charts/token/e0302560ced2fdcbfcb2602697df970cd0d6a38f94b32703f51c312b.000de140e0ff8cbbb0153e10a20a7c6c243fe381e1e4c5adbf13d5cb811da283?charts=" target="_blank"><img src="./assets/taptools_logo.png" alt="Taptools"></a>
-            <a href="https://app.dexhunter.io/swap?tokenIdSell=&tokenIdBuy=7fd79892567b12b8a4fe3befc41786322d40a9680a0509b158e8e1b946414b44414b" target="_blank"><img src="./assets/hunt-token.svg" alt="Dexhunter"></a>
-            <a href="https://www.jpg.store/collection/fakdak?tab=items" target="_blank"><img src="./assets/jpg.jpg" alt="JPG"></a>
-            <a href="https://discord.gg/dysWuqwZpq" target="_blank"><img src="./assets/discord_logo.png" alt="Discord"></a>
-            <a href="https://t.me/+nEvAOnVqxvo2MTE0" target="_blank"><img src="./assets/telegram_logo.png" alt="TG"></a>
+          <a href="https://x.com/FakDakADA" target="_blank"><img src="./images/x.svg" alt="Twitter"></a>
+          <a href="https://www.taptools.io/charts/token/e0302560ced2fdcbfcb2602697df970cd0d6a38f94b32703f51c312b.000de140e0ff8cbbb0153e10a20a7c6c243fe381e1e4c5adbf13d5cb811da283?charts=" target="_blank"><img src="./images/taptools_logo.png" alt="Taptools"></a>
+          <a href="https://app.dexhunter.io/swap?tokenIdSell=&tokenIdBuy=7fd79892567b12b8a4fe3befc41786322d40a9680a0509b158e8e1b946414b44414b" target="_blank"><img src="./images/hunt-token.svg" alt="Dexhunter"></a>
+          <a href="https://www.jpg.store/collection/fakdak?tab=items" target="_blank"><img src="./images/jpg.jpg" alt="JPG"></a>
+          <a href="https://discord.gg/dysWuqwZpq" target="_blank"><img src="./images/discord_logo.png" alt="Discord"></a>
+          <a href="https://t.me/+nEvAOnVqxvo2MTE0" target="_blank"><img src="./images/telegram_logo.png" alt="TG"></a>
         </section>
     </main>
+</div>
 </body>
+<script src="script.js" defer></script>
 </html>
