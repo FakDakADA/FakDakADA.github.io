@@ -21,7 +21,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery and Random Image</title>
+  <title>Meme Gallery and Random Meme</title>
   <link rel="stylesheet" href="./styles/meme.css" />
 </head>
 
@@ -29,22 +29,22 @@
   <div class="wrapeir">  
   <div class="tabs">
     <button class="tab-button" onclick="openTab('galleryTab')">Gallery</button>
-    <button class="tab-button" onclick="openTab('randomTab')">Random Image</button>
+    <button class="tab-button" onclick="openTab('randomTab')">Random Meme</button>
   </div>
 
   <div id="galleryTab" class="tab-content">
-    <h2>Image Gallery</h2>
+    <h2>Meme Gallery</h2>
     <div id="gallery"></div>
   </div>
 
   <div id="randomTab" class="tab-content" style="display:none;">
-    <h2>Random Image</h2>
+    <h2>Random Meme</h2>
     <div id="randomImageContainer">
       <img id="randomImage" src="" alt="Random Image">
     </div>
-    <button onclick="getRandomImage()">Get Random Image</button>
-    <button onclick="copyImage()">Copy Image</button>
-    <button onclick="downloadImage()">Download Image</button>
+    <button onclick="getRandomImage()">Get Random Meme</button>
+    <button onclick="copyImage()">Copy Meme</button>
+    <button onclick="downloadImage()">Download Meme</button>
   </div>
 </div>
   <script src="meme.js" defer></script>
