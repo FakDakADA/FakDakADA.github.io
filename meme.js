@@ -384,15 +384,37 @@ function showSelectedImage(image) {
 function copyImage() {
   const randomImageElement = document.getElementById("randomImage");
   const imgURL = randomImageElement.src;
-  navigator.clipboard
-    .writeText(imgURL)
-    .then(() => {
-      alert("Image URL copied to clipboard");
+
+  fetch(imgURL)
+    .then(response => response.blob())
+    .then(blob => {
+      const img = new Image();
+      img.src = URL.createObjectURL(blob);
+
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+
+        canvas.toBlob(blob => {
+          const clipboardItemInput = new ClipboardItem({ [blob.type]: blob });
+          navigator.clipboard.write([clipboardItemInput])
+            .then(() => {
+              alert("Meme copied to clipboard");
+            })
+            .catch(err => {
+              alert("Failed to copy meme: " + err);
+            });
+        });
+      };
     })
-    .catch((err) => {
-      alert("Failed to copy image URL: " + err);
+    .catch(err => {
+      alert("Failed to fetch meme: " + err);
     });
 }
+
 
 function downloadImage() {
   const randomImageElement = document.getElementById("randomImage");
