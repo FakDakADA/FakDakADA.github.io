@@ -330,16 +330,15 @@ const images = [
   "298.gif",
   "299.gif",
   "300.gif",
-  "301.gif",
+  "301.jpeg",
   "302.jpeg",
   "303.jpeg",
   "304.jpeg",
-  "305.jpeg",
+  "305.png",
   "306.png",
   "307.png",
   "308.png",
   "309.png",
-
   // Add more image file names
 ];
 document.addEventListener("DOMContentLoaded", () => {
